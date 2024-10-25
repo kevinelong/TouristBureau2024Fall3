@@ -1,17 +1,17 @@
 function getHikeDetail(hike){
     const path = "./data/HikingPage/";    
     return `
-    <pre>
-        id: ${hike.id}, 
-        name: ${hike.name}, 
-        description: ${hike.description} 
-        length: ${hike.length}, 
-        difficulty: ${hike.difficulty}, 
-    </pre>
+<pre>
+    id:             ${hike.id} 
+    name:           ${hike.name} 
+    description:    ${hike.description} 
+    length:         ${hike.length} 
+    difficulty:     ${hike.difficulty} 
+</pre>
     <br>
-    scenicImage:   <br> <img src="${ path + hike.scenicImage}">
+    Scenic Image:   <br> <img src="${ path + hike.scenicImage}">
     <br>
-    trailMapImage: <br> <img src="${ path + hike.trailMapImage}">
+    Trail Map Image: <br> <img src="${ path + hike.trailMapImage}">
     `;
 }
 
