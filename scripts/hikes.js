@@ -4,14 +4,13 @@ function getHikeDetail(hike){
 <pre>
     id:             ${hike.id} 
     name:           ${hike.name} 
-    description:    ${hike.description} 
+     
     length:         ${hike.length} 
     difficulty:     ${hike.difficulty} 
 </pre>
-    <br>
-    Scenic Image:   <br> <img src="${ path + hike.scenicImage}">
-    <br>
-    Trail Map Image: <br> <img src="${ path + hike.trailMapImage}">
+<p>${hike.description}</p>
+    <div class="hikeImage">Scenic Image:   <br> <img src="${ path + hike.scenicImage}"> </div>
+    <div class="hikeImage">Trail Map Image: <br> <img src="${ path + hike.trailMapImage}"> </div>
     `;
 }
 
